@@ -4,8 +4,9 @@ base_url = "https://jsonplaceholder.typicode.com"
 
 class TestOne:
     def test_one(self):
-        print("Hello World!")
-        assert 1 == 1
+        expected = "Hello World!"
+        actual = "Hello World!"
+        assert expected == actual
 
 
     def test_that_file_data_is_correct(self):
