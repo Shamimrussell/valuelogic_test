@@ -1,7 +1,7 @@
 import pytest
 import requests
 
-base_url = "https://jsonplaceholder.typicode.com"
+BASE_URL = "https://jsonplaceholder.typicode.com"
 
 class TestOne:
     def test_one(self):
@@ -17,7 +17,7 @@ class TestOne:
 
 
     def test_get_posts(self):
-        response = requests.get(base_url + "/posts/87")
+        response = requests.get(BASE_URL + "/posts/87")
         assert response.status_code == 200
 
         data = response.json()
@@ -26,7 +26,7 @@ class TestOne:
 
 
     def test_get_all_posts(self):
-        response = requests.get(base_url + "/posts")
+        response = requests.get(BASE_URL + "/posts")
         assert response.status_code == 200
 
         posts = response.json()

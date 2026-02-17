@@ -39,3 +39,10 @@ Tests run automatically on push via GitHub Actions. See `.github/workflows/` for
 ## API Used
 
 JSONPlaceholder (https://jsonplaceholder.typicode.com) - Free fake REST API for testing.
+
+## Possible Improvements
+
+- Introduce API client abstraction for separation of concerns
+- Use pytest fixtures for reusable setup
+- Add reporting via Allure
+- Parameterize API tests
