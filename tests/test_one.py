@@ -1,3 +1,4 @@
+import pytest
 import requests
 
 base_url = "https://jsonplaceholder.typicode.com"
@@ -11,7 +12,7 @@ class TestOne:
 
     def test_that_file_data_is_correct(self):
         with open("testdata/hello.txt") as f:
-            data = f.read()
+            data = f.read().strip() # Tar bort eventuella extra mellanslag eller radbrytningar
             assert data == "Hello World!"
 
 
@@ -20,7 +21,7 @@ class TestOne:
         assert response.status_code == 200
 
         data = response.json()
-        assert data["id"] ==87
+        assert data["id"] == 87
         assert "title" in data 
 
 
