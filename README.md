@@ -4,7 +4,7 @@
 Simple test automation solution using Python and Pytest.
 
 ## Requirements
-- Python 
+- Python 3.14.0 
 - pytest
 - requests
 
@@ -27,7 +27,7 @@ pytest -v
 
 ## Test Cases
 
-1. **test_one** - Basic sanity test
+1. **test_one** - Basic test for verification of pytest enviroment
 2. **test_that_file_data_is_correct** - File validation test that reads `testdata/hello.txt` and validates content
 3. **test_get_posts** - API test that fetches a specific post and validates response
 4. **test_get_all_posts** - API test that validates all posts are retrieved
